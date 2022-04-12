@@ -1,0 +1,76 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes animate-background {
+    0%{
+        background-position: 100% 100%;
+    }
+    25%{
+        background-position: 350% 250%;
+    }
+    50%{
+        background-position: 175% 39%;
+    
+    }75%{
+        background-position: 400% 250%;
+    }
+    100%{
+        background-position: 100% 150%;
+    }     
+    
+}
+html{
+    font-size: 62.5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+}
+body{
+    
+    background-image: linear-gradient(to right, #FFDEE9 , #B5FFFC );
+    background-size: 150% 200%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    animation: animate-background 20s infinite ease-in-out;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 4rem;
+    border-radius: 25px;
+    color: rgb(30, 84, 66);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 4.5rem;
+}
+.clock-day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 600;
+}
+.clock-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 600;
+}
+.clock-style{
+    display: flex;
+    gap: 2rem;
+}
+
+
+@media (max-width:31.25em){
+.container{
+    font-size: 3.5rem;
+}
+}
